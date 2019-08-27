@@ -7,6 +7,12 @@ spring:
   jpa:
      hibernate:
        show-sql: false
+     properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+     database-plateform: org.hibernate.dialect.PostgreSQL9Dialect
       
 eureka:
   client:
